@@ -1,0 +1,246 @@
+/* Dark Theme & Fonts */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #121212;
+    color: #E0E0E0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center; /* Centering content */
+    align-items: center;
+    background: black;
+    padding: 15px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #E50914; /* Netflix Red */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, .active {
+    color: #F4C20B; /* Amazon Gold */
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background: url('../images/milk-background.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #E50914;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #F4C20B;
+}
+
+/* Brands */
+.brands {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.brand-logos img {
+    width: 120px;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+.brand-logos img:hover {
+    transform: scale(1.1);
+}
+
+/* Features */
+.features {
+    text-align: center;
+    padding: 50px 10%;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.feature {
+    width: 30%;
+    padding: 20px;
+    background: #1E1E1E;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.feature i {
+    font-size: 30px;
+    color: #F4C20B;
+}
+
+.feature:hover {
+    background: #333;
+}
+
+/* Testimonials */
+.testimonials {
+    text-align: center;
+    padding: 50px 10%;
+}
+
+.testimonial {
+    background: #1E1E1E;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* CTA Section */
+.cta {
+    text-align: center;
+    padding: 50px;
+    background: #1E1E1E;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: white;
+}
+/* Dashboard Link Section */
+.dashboard-link {
+    text-align: center;
+    background: #1E1E1E;
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.dashboard-link h2 {
+    color: #F4C20B;
+}
+
+.dashboard-link p {
+    color: #E0E0E0;
+    margin-bottom: 10px;
+}
+
+.dashboard-link .btn {
+    background: #E50914;
+    padding: 12px 24px;
+    font-size: 1rem;
+}
+
+.dashboard-link .btn:hover {
+    background: #F4C20B;
+}
+
+/* Orders Page */
+.order-container {
+    max-width: 500px;
+    margin: auto;
+    background: #1E1E1E;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h2 {
+    color: #F4C20B;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background: #333;
+    color: white;
+}
+
+button {
+    background: #E50914;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background: #F4C20B;
+}
+
+/* Live Order Preview */
+.order-preview {
+    background: #2C2C2C;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.hidden {
+    display: none;
+}

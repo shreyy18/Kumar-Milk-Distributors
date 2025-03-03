@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Kumar Milk Distributors</h1>
+    </header>
+
+    <section class="dashboard-container">
+        <h2>Dashboard Overview</h2>
+
+        <!-- Dashboard Cards -->
+        <div class="dashboard-cards">
+            <div class="card">
+                <h3>Total Orders</h3>
+                <p id="totalOrders">0</p>
+            </div>
+            <div class="card">
+                <h3>Pending Orders</h3>
+                <p id="pendingOrders">0</p>
+            </div>
+            <div class="card">
+                <h3>Completed Orders</h3>
+                <p id="completedOrders">0</p>
+            </div>
+        </div>
+
+        <!-- Search & Filters -->
+        <div class="order-controls">
+            <input type="text" id="searchOrder" placeholder="Search by Order ID...">
+            <button onclick="filterOrders('All')">All</button>
+            <button onclick="filterOrders('Pending')">Pending</button>
+            <button onclick="filterOrders('Completed')">Completed</button>
+        </div>
+
+        <!-- Orders Table -->
+        <h2>Recent Orders</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer</th>
+                    <th>Milk Type</th>
+                    <th>Quantity</th>
+                    <th>Delivery Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="orderTableBody"></tbody>
+        </table>
+
+        <!-- Sales Chart -->
+        <h2>Sales Report</h2>
+        <canvas id="salesChart"></canvas>
+    </section>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

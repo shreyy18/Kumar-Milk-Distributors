@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Milk - Kumar Milk Distributors</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">Kumar Milk Distributors</h1>
+    </header>
+
+    <section class="order-container">
+        <h2>Place Your Order</h2>
+        <form id="orderForm">
+            <div class="form-group">
+                <label for="milkType">Select Milk Brand:</label>
+                <select id="milkType">
+                    <option value="Amul">Amul</option>
+                    <option value="Gokul">Gokul</option>
+                    <option value="Mother Dairy">Mother Dairy</option>
+                    <option value="Patanjali">Patanjali</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Quantity (Liters):</label>
+                <input type="number" id="quantity" min="1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="deliveryDate">Delivery Date:</label>
+                <input type="date" id="deliveryDate" required>
+            </div>
+
+            <!-- Live Order Preview -->
+            <div class="order-preview">
+                <h3>Order Preview</h3>
+                <p><strong>Brand:</strong> <span id="previewBrand">-</span></p>
+                <p><strong>Quantity:</strong> <span id="previewQuantity">-</span> Liters</p>
+                <p><strong>Delivery Date:</strong> <span id="previewDate">-</span></p>
+            </div>
+
+            <button type="submit" class="btn">Place Order</button>
+        </form>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section class="dashboard-link">
+        <h2>Admin Dashboard</h2>
+        <p>Manage orders and track sales.</p>
+        <a href="dashboard.html" class="btn">Go to Dashboard</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Kumar Milk Distributors. All rights reserved.</p>
+    </footer>
+
+    <script src="js/orders.js"></script>
+</body>
+</html>
